@@ -27,6 +27,6 @@ public class Enemy : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         if(collision.gameObject.CompareTag("Right Hand"))
-            Destroy(GameObject);
+            Destroy(gameObject);
     }
 }
