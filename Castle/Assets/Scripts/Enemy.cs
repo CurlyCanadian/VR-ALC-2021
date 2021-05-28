@@ -21,12 +21,12 @@ public class Enemy : MonoBehaviour
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed);
-
         
     }
     private void OnCollisionExit(Collision collision)
     {
         if(collision.gameObject.CompareTag("Right Hand"))
             Destroy(gameObject);
+
     }
 }
